@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Escreva um programa que contenha duas variáveis inteiras. Compare os endereços e exiba o endereço e o conteúdo do maior endereço.
+
+int main() {
+
+    int var1 = 10;
+    int var2 = 5;
+    int *ptr1 = NULL;
+    int *ptr2 = NULL;
+    ptr1 = &var1;
+    ptr2 = &var2;
+
+    printf("var1 = %i\n", var1);
+    printf("var2 = %i\n", var2);
+    printf("valor do ponteiro 1 = %p\n", ptr1);
+    printf("valor do ponteiro 2 = %p\n", ptr2);
+
+    if(&var1 > &var2) {
+
+        printf("O maior endereço é da primeira variável, tendo o endereço: %p\n", ptr1);
+
+    }
+    else {
+
+        printf("O maior endereço é da segunda variável, tendo o endereço: %p\n", ptr2);
+
+    }
+
+    return 0;
+    
+
+}
