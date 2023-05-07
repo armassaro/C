@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* Elabore uma função que receba como parâmetro um valor inteiro n e gere como saída um triângulo lateral formado por asteriscos conforme o exemplo a seguir, em que usamos n = 4:
+/* Elabore uma função que receba como parâmetro um valor inteiro n e 
+gere como saída um triângulo lateral formado por asteriscos conforme o exemplo a seguir, em que usamos n = 4:
 *
 **
 ***
@@ -11,7 +12,7 @@
 **
 * 
   
-  */
+*/
 
 int main() {
 
