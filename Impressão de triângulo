@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* Elabore uma função que receba como parâmetro um valor inteiro n e gere como saída um triângulo lateral formado por asteriscos conforme o exemplo a seguir, em que usamos n = 4:
+*
+**
+***
+****
+***
+**
+* 
+  
+  */
+
+int main() {
+
+int n;
+int aux;
+
+printf("Digite um inteiro para print de triângulo lateral: ");  //coleta de inteiro que será utilizado como base para geração do triângulo
+scanf("%i", &n);
+
+for(aux = 1; aux <= n; aux++) {  //geração da primeira metade + centro
+
+    for(int aux1 = aux; aux1 >= 1; aux1--) {
+
+        printf("*");
+
+    }
+
+    printf("\n");
+
+}
+
+for(n = n; n >= 1; n--) {  //geração da segunda metade
+
+    for(aux = n - 1; aux >= 1; aux--) {
+
+        printf("*");
+
+    }
+
+    printf("\n");
+
+}
+
+return 0;
+
+}
